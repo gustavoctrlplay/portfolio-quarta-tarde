@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&family=Bitcount+Grid+Single:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: #2bcfa1;
+  background: #2d3331;
+  font-family: "Bitcount Grid Single", system-ui;
+  height: 100vh;
+}
+
+a {
+  color: #2bcfa1;
+}
+
+h1 {
+  font-size: 60px;
+  transform: 0.5s;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  border-right: 0.15em solid #2bcfa1;
+  animation: 3s linear 0s forwards typing, blink 0.75s step-end infinite;
+}
+
+h1:hover {
+  text-decoration: underline;
+  transform: 0.5s;
+}
+
+section {
+  color: #2d3331;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 10px;
+  box-shadow: 35px 7px 61px -10px rgba(0, 0, 0, 0.61);
+  transition: 0.5s;
+  background-color: #27bf94;
+}
+
+section:hover {
+  box-shadow: 35px 7px 50px 17px rgba(0, 0, 0, 0.61);
+  transition: 0.5s;
+}
+
+li a {
+  text-decoration: none;
+  color: #2bcfa1;
+  font-size: 24px;
+  transition: 0.5s;
+}
+
+li a:hover {
+  font-size: 36px;
+  transition: 0.5s;
+  margin: 30px;
+}
+
+header {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#conteudo-principal {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  margin: 10px;
+}
+
+header ul li {
+  margin: 10px;
+}
+
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 95%;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: #2bcfa1;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    font-size: 45px;
+    transform: 0.5s;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    border-right: 0.15em solid #2bcfa1;
+    animation: 3s linear 0s forwards typing, blink 0.75s step-end infinite;
+  }
+  #conteudo-principal {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    font-size: 50px;
+    transform: 0.5s;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    border-right: 0.15em solid #2bcfa1;
+    animation: 3s linear 0s forwards typing, blink 0.75s step-end infinite;
+  }
+  #conteudo-principal {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #27bf94;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #container {
+    display: flex;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    h1 {
+    font-size: 60px;
+    transform: 0.5s;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    border-right: 0.15em solid #2bcfa1;
+    animation: 3s linear 0s forwards typing, blink 0.75s step-end infinite;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+section:hover {
+  box-shadow: 0 0 25px #2bcfa160, 0 0 10px #2bcfa1;
+  transform: perspective(600px) rotateY(15deg);
+  transition: transform 0.4s ease;
+}
+
